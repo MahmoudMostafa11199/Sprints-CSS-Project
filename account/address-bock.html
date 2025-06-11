@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>E-commarce | My Account</title>
+    <meta name="description" content="" />
+
+    <!----------------------- Page Icon ----------------------->
+
+    <!----------------------- Google Font ----------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!----------------------- CSS Files ----------------------->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary-50: #fbecec;
+        --color-primary-100: #f4c7c7;
+        --color-primary-200: #eda2a2;
+        --color-primary-300: #e98f8f;
+        --color-primary-400: #e67c7c;
+        --color-primary-500: #e26969;
+        --color-primary-600: #df5757;
+        --color-primary-700: #db4444;
+        --color-primary-800: #af3636;
+        --color-primary-900: #6e2222;
+
+        --color-secondary-50: #e6fff0;
+        --color-secondary-100: #ccffe0;
+        --color-secondary-200: #99ffc2;
+        --color-secondary-300: #66ffa3;
+        --color-secondary-400: #33ff85;
+        --color-secondary-500: #00cc52;
+        --color-secondary-600: #00993d;
+        --color-secondary-700: #00ff66;
+        --color-secondary-800: #006629;
+        --color-secondary-900: #003314;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!----------------------- JavaScript Files ----------------------->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="../assets/js/loading-layout.js" defer></script>
+    <script src="./account.js" defer></script>
+  </head>
+
+  <!----------------------- BODY ----------------------->
+  <body>
+    <!----------------------- HEADER ----------------------->
+    <header class="header py-3 px-3 shadow-sm"></header>
+
+    <!----------------------- Main ----------------------->
+    <main class="main account-page">
+      <!----------------------- Bread Crumb Nav ----------------------->
+      <nav aria-label="Breadcrumb" class="bread-crumb-section">
+        <div
+          class="container mb-12 space-x-3 text-sm py-5 text-center md:py-10 md:text-start"
+        >
+          <a
+            href="../index.html"
+            class="text-gray-400 transition-all hover:text-gray-600"
+          >
+            Home
+          </a>
+          <span>/</span>
+          <span>My Account</span>
+        </div>
+      </nav>
+
+      <!----------------------- Account Section ----------------------->
+      <div class="container pb-28">
+        <div class="grid grid-cols-12 gap-8">
+          <aside
+            aria-label="Account Navigation"
+            class="account-navigation col-span-12 md:col-span-4 shadow-lg px-10 py-8"
+          ></aside>
+
+          <section
+            class="profile-section col-span-12 md:col-span-8 shadow-lg px-10 py-8"
+          ></section>
+        </div>
+      </div>
+    </main>
+
+    <!----------------------- FOOTER ----------------------->
+    <footer class="footer bg-black text-white"></footer>
+  </body>
+</html>

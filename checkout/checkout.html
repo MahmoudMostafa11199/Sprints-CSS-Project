@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>E-commarce | Checkout</title>
+    <meta name="description" content="" />
+
+    <!----------------------- Page Icon ----------------------->
+
+    <!----------------------- Google Font ----------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!----------------------- CSS Files ----------------------->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary-50: #fbecec;
+        --color-primary-100: #f4c7c7;
+        --color-primary-200: #eda2a2;
+        --color-primary-300: #e98f8f;
+        --color-primary-400: #e67c7c;
+        --color-primary-500: #e26969;
+        --color-primary-600: #df5757;
+        --color-primary-700: #db4444;
+        --color-primary-800: #af3636;
+        --color-primary-900: #6e2222;
+
+        --color-secondary-50: #e6fff0;
+        --color-secondary-100: #ccffe0;
+        --color-secondary-200: #99ffc2;
+        --color-secondary-300: #66ffa3;
+        --color-secondary-400: #33ff85;
+        --color-secondary-500: #00cc52;
+        --color-secondary-600: #00993d;
+        --color-secondary-700: #00ff66;
+        --color-secondary-800: #006629;
+        --color-secondary-900: #003314;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!----------------------- JavaScript Files ----------------------->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="../assets/js/loading-layout.js" defer></script>
+    <script type="module" src="./checkout.js" defer></script>
+  </head>
+
+  <!----------------------- BODY ----------------------->
+  <body>
+    <!----------------------- HEADER ----------------------->
+    <header class="header py-3 px-3 shadow-sm"></header>
+
+    <!----------------------- Main ----------------------->
+    <main class="main checkout-page">
+      <!----------------------- Bread Crumb Section ----------------------->
+      <!----------------------- Bread Crumb Nav ----------------------->
+      <nav aria-label="Breadcrumb" class="bread-crumb-section">
+        <div
+          class="container mb-12 space-x-1 text-sm py-5 text-center md:space-x-3 md:py-10 md:text-start"
+        >
+          <a
+            href="../index.html"
+            class="text-gray-400 transition-all hover:text-gray-600"
+          >
+            Home
+          </a>
+          <span>/</span>
+          <a
+            href="../account/account.html"
+            class="text-gray-400 transition-all hover:text-gray-600"
+          >
+            My Account
+          </a>
+          <span>/</span>
+          <a
+            href="../products/productDetails.html"
+            class="text-gray-400 transition-all hover:text-gray-600"
+          >
+            Product
+          </a>
+          <span>/</span>
+          <a
+            href="../cart/cart.html"
+            class="text-gray-400 transition-all hover:text-gray-600"
+          >
+            View Cart
+          </a>
+          <span>/</span>
+          <span>Checkout</span>
+        </div>
+      </nav>
+
+      <!----------------------- Billing Section ----------------------->
+      <section class="billing-section pb-20 pt-10 md:pt-0">
+        <div class="container">
+          <h2 class="headingSecondary text-3xl mb-10">Billing Details</h2>
+          <div class="flex flex-col justify-between sm:flex-row gap-10">
+            <form class="w-full flex flex-col gap-y-6 sm:w-5/12">
+              <div>
+                <label class="text-sm text-gray-500 mb-1 block" for="firstname">
+                  First Name<span class="text-primary-600"> *</span>
+                </label>
+                <input type="text" id="firstname" class="input" required />
+              </div>
+              <div>
+                <label
+                  class="text-sm text-gray-500 mb-1 block"
+                  for="company-name"
+                >
+                  Company Name
+                </label>
+                <input type="text" id="company-name" class="input" />
+              </div>
+              <div>
+                <label
+                  class="text-sm text-gray-500 mb-1 block"
+                  for="street-address"
+                >
+                  Street Address<span class="text-primary-600"> *</span>
+                </label>
+                <input type="text" id="street-address" class="input" required />
+              </div>
+              <div>
+                <label class="text-sm text-gray-500 mb-1 block" for="apartment">
+                  Apartment, floor, etc. (optional)
+                </label>
+                <input type="text" id="apartment" class="input" />
+              </div>
+              <div>
+                <label class="text-sm text-gray-500 mb-1 block" for="town/city">
+                  Town/City<span class="text-primary-600"> *</span>
+                </label>
+                <input type="text" id="town/city" class="input" required />
+              </div>
+              <div>
+                <label
+                  class="text-sm text-gray-500 mb-1 block"
+                  for="phone-number"
+                >
+                  Phone Number<span class="text-primary-600"> *</span>
+                </label>
+                <input type="tel" id="phone-number" class="input" required />
+              </div>
+              <div>
+                <label class="text-sm text-gray-500 mb-1 block" for="email">
+                  Email Address<span class="text-primary-600"> *</span>
+                </label>
+                <input type="text" id="email" class="input" required />
+              </div>
+              <div class="flex items-center gap-x-3">
+                <input
+                  type="checkbox"
+                  name="info-save"
+                  id="info-save"
+                  class="h-5 w-5 border-none accent-primary-500 focus:outline-none cursor-pointer"
+                />
+                <label for="info-save" class="text-sm cursor-pointer">
+                  Save this information for faster check-out next time
+                </label>
+              </div>
+            </form>
+
+            <div class="w-full sm:w-1/2 md:w-5/12">
+              <div class="shopping-cart space-y-2 mb-4 w-11/12"></div>
+
+              <div class="flex flex-col gap-3 mb-8 w-11/12">
+                <div class="flex justify-between items-center">
+                  <span>Suptotal:</span>
+                  <span class="total-price">00.00</span>
+                </div>
+                <hr class="h-[1.5px] bg-gray-400" />
+                <div class="flex justify-between items-center">
+                  <span>Shipping:</span>
+                  <span>Free</span>
+                </div>
+                <hr class="h-[1.5px] bg-gray-400" />
+                <div class="flex justify-between items-center">
+                  <span>Total:</span>
+                  <span class="total-price">00.00</span>
+                </div>
+              </div>
+
+              <div class="w-11/12 space-y-6 mb-6">
+                <div class="flex justify-between items-center">
+                  <div>
+                    <input
+                      class="hidden radio-group"
+                      type="radio"
+                      name="cash"
+                      id="bank"
+                    />
+                    <label for="bank" class="cursor-pointer ps-8 relative">
+                      <span
+                        class="inline-block w-4 h-4 absolute top-1 left-0 border-2 border-solid border-gray-800 rounded-full before:content-[''] before:absolute before:block before:w-2 before:h-2 before:bg-black before:rounded-full before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:opacity-0 transition-opacity"
+                      ></span>
+                      Bank
+                    </label>
+                  </div>
+                  <div class="flex items-center">
+                    <img
+                      src="../assets/imgs/visa/imag.png"
+                      alt=""
+                      width="36"
+                      height="36"
+                      class=""
+                    />
+                    <img
+                      src="../assets/imgs/visa/Visa.png"
+                      alt=""
+                      width="36"
+                      height="36"
+                      class=""
+                    />
+                    <img
+                      src="../assets/imgs/visa/Mastercard.png"
+                      alt=""
+                      width="36"
+                      height="36"
+                      class=""
+                    />
+                    <img
+                      src="../assets/imgs/visa/Nagad.png"
+                      alt=""
+                      width="36"
+                      height="36"
+                      class=""
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <input
+                    type="radio"
+                    name="cash"
+                    id="cash"
+                    class="hidden radio-group"
+                  />
+                  <label for="cash" class="cursor-pointer ps-8 relative">
+                    <span
+                      class="inline-block w-4 h-4 absolute top-1 left-0 border-2 border-solid border-gray-800 rounded-full before:absolute before:block before:w-2 before:h-2 before:bg-black before:rounded-full before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:opacity-0 transition-opacity"
+                    ></span>
+                    Cash on delivery
+                  </label>
+                </div>
+              </div>
+
+              <div class="mb-16">
+                <div class="justify-start flex gap-4 flex-wrap">
+                  <input
+                    type="text"
+                    placeholder="Coupon Code"
+                    class="text-sm px-6 py-3 grow border-2 border-gray-500 rounded-md"
+                  />
+                  <a
+                    href="#"
+                    class="px-8 py-3 inline-block rounded transition-all text-white bg-[var(--color-primary-700)] hover:bg-[var(--color-primary-600)]"
+                    >Apply Coupon</a
+                  >
+                </div>
+              </div>
+
+              <div class="text-center">
+                <a
+                  href="#"
+                  class="px-8 py-3 inline-block rounded transition-all text-white bg-[var(--color-primary-700)] hover:bg-[var(--color-primary-600)]"
+                  >Place Order</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!----------------------- FOOTER ----------------------->
+    <footer class="footer bg-black text-white"></footer>
+  </body>
+</html>

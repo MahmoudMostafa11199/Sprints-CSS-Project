@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>E-commarce | Home</title>
+    <meta name="description" content="" />
+
+    <!----------------------- Page Icon ----------------------->
+
+    <!----------------------- Google Font ----------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!----------------------- JavaScript Files ----------------------->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="./assets/js/loading-layout.js" defer></script>
+    <script type="module" src="./script.js"></script>
+
+    <!----------------------- CSS Files ----------------------->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary-50: #fbecec;
+        --color-primary-100: #f4c7c7;
+        --color-primary-200: #eda2a2;
+        --color-primary-300: #e98f8f;
+        --color-primary-400: #e67c7c;
+        --color-primary-500: #e26969;
+        --color-primary-600: #df5757;
+        --color-primary-700: #db4444;
+        --color-primary-800: #af3636;
+        --color-primary-900: #6e2222;
+
+        --color-secondary-50: #e6fff0;
+        --color-secondary-100: #ccffe0;
+        --color-secondary-200: #99ffc2;
+        --color-secondary-300: #66ffa3;
+        --color-secondary-400: #33ff85;
+        --color-secondary-500: #00cc52;
+        --color-secondary-600: #00993d;
+        --color-secondary-700: #00ff66;
+        --color-secondary-800: #006629;
+        --color-secondary-900: #003314;
+      }
+    </style>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <!----------------------- Body ----------------------->
+  <body>
+    <!----------------------- HEADER ----------------------->
+    <header class="header p-3 shadow-sm"></header>
+
+    <!----------------------- MAIN ----------------------->
+    <main class="main home-page">
+      <!----------------------- Home Section ----------------------->
+      <section class="home">
+        <div class="container grid grid-cols-1 gap-x-8 lg:grid-cols-12">
+          <div
+            class="lg:col-span-2 lg:border-r-1 h-12 overflow-y-hidden lg:h-auto"
+          >
+            <ul
+              class="space-y-3 py-6 pe-4 flex lg:flex-col text-nowrap gap-x-3 overflow-x-auto lg:text-wrap"
+            >
+              <li>
+                <a
+                  href="/"
+                  class="flex justify-between items-center hover:text-gray-600"
+                >
+                  Woman&apos;s Fashion
+                  <iconify-icon
+                    icon="heroicons:chevron-right-solid"
+                    width="16"
+                    height="16"
+                  ></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  class="flex justify-between items-center hover:text-gray-600"
+                >
+                  Men&apos;s Fashion
+                  <iconify-icon
+                    icon="heroicons:chevron-right-solid"
+                    width="16"
+                    height="16"
+                  ></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="/" class="hover:text-gray-600">Electronics</a>
+              </li>
+              <li>
+                <a href="/" class="hover:text-gray-600">Home & Lifestyle</a>
+              </li>
+              <li>
+                <a href="/" class="hover:text-gray-600">Medicine</a>
+              </li>
+              <li>
+                <a href="/" class="hover:text-gray-600">Sports & Outdoor</a>
+              </li>
+              <li>
+                <a href="/" class="hover:text-gray-600">Baby&apos;s & Toys</a>
+              </li>
+              <li>
+                <a href="/" class="hover:text-gray-600">Groceries & Pets</a>
+              </li>
+              <li>
+                <a href="/" class="hover:text-gray-600">Health & Beauty</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-10 py-6">
+            <div
+              class="bg-black text-white px-12 py-6 h-full flex justify-evenly items-center"
+            >
+              <div class="sm:w-1/2 sm:pe-10">
+                <p class="flex items-center gap-4 mb-5">
+                  <iconify-icon
+                    icon="cib:apple"
+                    class="text-5xl sm:text-[4rem]"
+                  ></iconify-icon>
+                  <span>iPhone 14 Series</span>
+                </p>
+                <h1
+                  class="font-bold text-white text-3xl sm:text-4xl md:text-5xl mb-8"
+                >
+                  Up to 10% off Voucher
+                </h1>
+                <a href="/" class="text-sm space-x-2 flex items-center">
+                  <span
+                    class="pb-1 border-b-2 border-gray-500 hover:border-transparent"
+                  >
+                    Shop Now
+                  </span>
+                  <iconify-icon
+                    class="inline-block"
+                    icon="fluent:arrow-right-20-regular"
+                    width="20"
+                    height="20"
+                  ></iconify-icon>
+                </a>
+              </div>
+              <div class="w-1/2 hidden sm:block">
+                <img src="./assets/imgs/phone.png" alt="phone" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------- Today-Sales Section ----------------------->
+      <section class="today-sales">
+        <div class="container py-20">
+          <p class="subHeading">Today&apos;s</p>
+
+          <div class="mb-10 flex items-center flex-wrap gap-y-4">
+            <h2
+              class="headingSecondary me-auto basis-full md:basis-auto md:items-end"
+            >
+              Flash Sales
+            </h2>
+            <div class="duration inline-block">
+              <p class="flex gap-4 font-[inter]">
+                <span
+                  class="day text-3xl font-bold -tracking-tight relative before:content-['Days'] before:absolute before:text-xs before:font-medium before:-top-4 before:left-0"
+                >
+                  03
+                </span>
+                <strong class="text-[var(--color-primary-700)]">:</strong>
+                <span
+                  class="hour text-3xl font-bold -tracking-tight relative before:content-['Hours'] before:absolute before:text-xs before:font-medium before:-top-4 before:left-0"
+                >
+                  23
+                </span>
+                <strong class="text-[var(--color-primary-700)]">:</strong>
+                <span
+                  class="minute text-3xl font-bold -tracking-tight relative before:content-['Minutes'] before:absolute before:text-xs before:font-medium before:-top-4 before:left-0"
+                >
+                  19
+                </span>
+                <strong class="text-[var(--color-primary-700)]">:</strong>
+                <span
+                  class="second text-3xl font-bold -tracking-tight relative before:content-['Seconds'] before:absolute before:text-xs before:font-medium before:-top-4 before:left-0"
+                >
+                  56
+                </span>
+              </p>
+            </div>
+            <div class="buttons flex gap-2 ml-auto">
+              <button class="">
+                <iconify-icon
+                  icon="majesticons:arrow-left"
+                  width="24"
+                  height="24"
+                  class="p-3 bg-gray-200 rounded-full"
+                  style="color: #000"
+                ></iconify-icon>
+              </button>
+              <button class="">
+                <iconify-icon
+                  icon="majesticons:arrow-right"
+                  width="24"
+                  height="24"
+                  class="p-3 bg-gray-200 rounded-full"
+                  style="color: #000"
+                ></iconify-icon>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flash-sales carousel-container flex gap-7 mb-8 overflow-y-hidden"
+          ></div>
+
+          <div class="text-center">
+            <a href="/" class="btn btn-primary">View All Products</a>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------- Category Section ----------------------->
+      <section class="categories-section">
+        <div class="container py-20 border-b-2">
+          <p class="subHeading">Categories</p>
+
+          <div class="flex justify-between mb-8 flex-wrap gap-y-4">
+            <h2 class="headingSecondary">Browse By Category</h2>
+            <div class="buttons flex gap-2 w-fit ml-auto">
+              <button class="">
+                <iconify-icon
+                  icon="majesticons:arrow-left"
+                  width="24"
+                  height="24"
+                  class="p-3 bg-gray-200 rounded-full"
+                  style="color: #000"
+                ></iconify-icon>
+              </button>
+              <button class="">
+                <iconify-icon
+                  icon="majesticons:arrow-right"
+                  width="24"
+                  height="24"
+                  class="p-3 bg-gray-200 rounded-full"
+                  style="color: #000"
+                ></iconify-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="carousel-container flex gap-6">
+            <a
+              href="/"
+              class="p-6 min-w-[14.9%] flex-shrink-0 flex flex-col items-center gap-1 border-2 border-gray-300 hover:border-[var(--color-primary-700)] transition-all hover:bg-[var(--color-primary-700)] hover:text-white"
+            >
+              <iconify-icon
+                icon="heroicons:device-phone-mobile"
+                width="34"
+                height="34"
+              ></iconify-icon>
+              <span>Phones</span>
+            </a>
+            <a
+              href="/"
+              class="p-6 min-w-[14.9%] flex-shrink-0 flex flex-col items-center gap-1 border-2 border-gray-300 hover:border-[var(--color-primary-700)] transition-all hover:bg-[var(--color-primary-700)] hover:text-white"
+            >
+              <iconify-icon
+                icon="guidance:computer-room"
+                width="34"
+                height="34"
+              ></iconify-icon>
+              <span>Computers</span>
+            </a>
+            <a
+              href="/"
+              class="p-6 min-w-[14.9%] flex-shrink-0 flex flex-col items-center gap-1 border-2 border-gray-300 hover:border-[var(--color-primary-700)] transition-all hover:bg-[var(--color-primary-700)] hover:text-white"
+            >
+              <iconify-icon
+                icon="fluent:smartwatch-20-regular"
+                width="34"
+                height="34"
+              ></iconify-icon>
+              <span>SmartWatch</span>
+            </a>
+            <a
+              href="/"
+              class="p-6 min-w-[14.9%] flex-shrink-0 flex flex-col items-center gap-1 border-2 border-gray-300 hover:border-[var(--color-primary-700)] transition-all hover:bg-[var(--color-primary-700)] hover:text-white"
+            >
+              <iconify-icon
+                icon="uil:camera"
+                width="34"
+                height="34"
+              ></iconify-icon>
+              <span>Camera</span>
+            </a>
+            <a
+              href="/"
+              class="p-6 min-w-[14.9%] flex-shrink-0 flex flex-col items-center gap-1 border-2 border-gray-300 hover:border-[var(--color-primary-700)] transition-all hover:bg-[var(--color-primary-700)] hover:text-white"
+            >
+              <iconify-icon
+                icon="material-symbols-light:headphones-outline-rounded"
+                width="34"
+                height="34"
+              ></iconify-icon>
+              <span>HeadPhones</span>
+            </a>
+            <a
+              href="/"
+              class="p-6 min-w-[14.9%] flex-shrink-0 flex flex-col items-center gap-1 border-2 border-gray-300 hover:border-[var(--color-primary-700)] transition-all hover:bg-[var(--color-primary-700)] hover:text-white"
+            >
+              <iconify-icon
+                icon="tabler:device-gamepad"
+                width="34"
+                height="34"
+              ></iconify-icon>
+
+              <span>Gaming</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------- Selling Products Section ----------------------->
+      <section class="selling-section">
+        <div class="container py-20">
+          <p class="subHeading">The Month</p>
+
+          <div
+            class="flex justify-between items-center flex-wrap gap-y-4 mb-14"
+          >
+            <h2 class="headingSecondary">Best Selling Products</h2>
+            <a href="/" class="btn btn-primary btn-res ms-auto"
+              >View All Products</a
+            >
+          </div>
+
+          <div class="selling-products flex gap-7 overflow-hidden"></div>
+        </div>
+      </section>
+
+      <!----------------------- Category Section ----------------------->
+      <section class="category-section">
+        <div class="container py-20 bg-black">
+          <div class="px-6 flex md:gap-8">
+            <div class="flex flex-col items-start gap-8">
+              <p class="text-secondary-700 font-semibold">Categories</p>
+              <h2 class="headingSecondary text-white text-5xl leading-tight">
+                Enhance Your Mucis Experience
+              </h2>
+              <div class="duration">
+                <ul class="flex gap-4 font-[inter]">
+                  <li
+                    class="bg-white p-4 rounded-full w-14 h-14 flex flex-col items-center justify-center"
+                  >
+                    <span class="hour text-[0.8rem] font-bold">23</span>
+                    <span class="text-[0.6rem] font-medium">Hours</span>
+                  </li>
+                  <li
+                    class="bg-white p-4 rounded-full w-14 h-14 flex flex-col items-center justify-center"
+                  >
+                    <span class="day text-[0.8rem] font-bold">05</span>
+                    <span class="text-[0.6rem] font-medium">Days</span>
+                  </li>
+                  <li
+                    class="bg-white p-4 rounded-full w-14 h-14 flex flex-col items-center justify-center"
+                  >
+                    <span class="minute text-[0.8rem] font-bold">59</span>
+                    <span class="text-[0.6rem] font-medium">Minutes</span>
+                  </li>
+                  <li
+                    class="bg-white p-4 rounded-full w-14 h-14 flex flex-col items-center justify-center"
+                  >
+                    <span class="second text-[0.8rem] font-bold">35</span>
+                    <span class="text-[0.6rem] font-medium">Seconds</span>
+                  </li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn-secondary"> Buy Now! </a>
+            </div>
+
+            <div class="grow w-full hidden md:block">
+              <img
+                class="img-speaker max-w-full h-full mx-auto"
+                src="./assets/imgs/JBL_BOOMBOX_2_HERO_020_x1.png"
+                alt="...."
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------- Our Product Section ----------------------->
+      <section class="our-product-section">
+        <div class="container py-20">
+          <p class="subHeading">Our Products</p>
+          <div class="flex justify-between items-center mb-14">
+            <h2 class="headingSecondary">Explore Our Products</h2>
+          </div>
+
+          <div class="our-products flex flex-wrap gap-6 gap-y-14"></div>
+
+          <div class="text-center mt-12">
+            <a class="btn btn-primary">View All Products</a>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------- Featured Section ----------------------->
+      <section class="featured-section">
+        <div class="container py-20">
+          <p class="subHeading">Featured</p>
+          <h2 class="headingSecondary mb-8">New Arrival</h2>
+          <div class="flex gap-6 text-white flex-wrap md:flex-nowrap">
+            <div
+              class="basis-full md:basis-1/2 h-90 md:h-[34rem] flex items-end p-6 bg-[#0d0d0d] bg-[url('./assets/imgs/ps5-playstation_large.png')] bg-auto bg-no-repeat bg-bottom"
+            >
+              <div class="space-y-4 w-5/11">
+                <h3 class="text-xl font-semibold">Play Station 5</h3>
+                <p class="text-xs">
+                  Black and White version of the PS5 coming out on sale.
+                </p>
+                <a
+                  href="#"
+                  class="inline-block pb-1 border-b-2 border-gray-500 hover:border-transparent"
+                  >Shop Now</a
+                >
+              </div>
+            </div>
+
+            <div class="basis-full md:basis-1/2 space-y-6">
+              <div
+                class="flex items-end p-6 h-1/2 bg-[#0d0d0d] bg-[url('./assets/imgs/woman-wearing-hat.png')] bg-contain bg-no-repeat bg-right"
+              >
+                <div class="space-y-2 w-5/12">
+                  <h3 class="text-xl font-semibold">
+                    Women&apos;s Collections
+                  </h3>
+                  <p class="text-xs">
+                    Featured woman collections that give you another vibe.
+                  </p>
+                  <a
+                    href="#"
+                    class="inline-block pb-1 border-b-2 border-gray-500 hover:border-transparent"
+                  >
+                    Shop Now
+                  </a>
+                </div>
+              </div>
+              <div class="flex gap-6 h-[45.5%]">
+                <div
+                  class="flex items-end p-6 h-full basis-1/2 bg-[#0d0d0d] bg-[url('./assets/imgs/speakers-amazon.png')] bg-auto bg-no-repeat bg-center"
+                >
+                  <div class="space-y-2 w-3/5">
+                    <h3 class="text-xl font-semibold">Speakers</h3>
+                    <p class="text-xs">Amazon wireless speakers</p>
+                    <a
+                      href="#"
+                      class="inline-block pb-1 border-b-2 border-gray-500 hover:border-transparent"
+                    >
+                      Shop Now
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="flex items-end p-6 h-full basis-1/2 bg-[#0d0d0d] bg-[url('./assets/imgs/perfume.png')] bg-auto bg-no-repeat bg-center"
+                >
+                  <div class="space-y-2 w-3/5">
+                    <h3 class="text-xl font-semibold">Perfume</h3>
+                    <p class="text-xs">GUCCI INTENSE OUD EDP</p>
+                    <a
+                      href="#"
+                      class="inline-block pb-1 border-b-2 border-gray-500 hover:border-transparent"
+                    >
+                      Shop Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container py-20">
+          <div class="flex justify-evenly gap-14 flex-wrap">
+            <div class="text-center shadow-sm p-6">
+              <iconify-icon
+                icon="hugeicons:delivery-truck-02"
+                width="24"
+                height="24"
+                class="inline-block mb-4 p-3 bg-black text-white border-8 rounded-full border-gray-300"
+              >
+              </iconify-icon>
+              <h4 class="font-semibold uppercase font-[Poppins] mb-1">
+                Free and Fast delivery
+              </h4>
+              <p class="text-xs">Free delivery for all orders over $140</p>
+            </div>
+            <div class="text-center shadow-sm p-6">
+              <iconify-icon
+                icon="lsicon:service-outline"
+                width="24"
+                height="24"
+                class="inline-block mb-4 bg-black p-3 text-white border-8 rounded-full border-gray-300"
+              ></iconify-icon>
+              <h4 class="font-semibold uppercase font-[Poppins] mb-1">
+                24/7 Customer service
+              </h4>
+              <p class="text-xs">Friendly 24/7 customer support</p>
+            </div>
+            <div class="text-center shadow-sm p-6">
+              <iconify-icon
+                icon="f7:checkmark-shield"
+                width="24"
+                height="24"
+                class="inline-block mb-4 bg-black p-3 text-white border-8 rounded-full border-gray-300"
+              ></iconify-icon>
+              <h4 class="font-semibold uppercase font-[Poppins] mb-1">
+                Money back Guarantee
+              </h4>
+              <p class="text-xs">We reurn money within 30 days</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!----------------------- FOOTER ----------------------->
+    <footer class="footer bg-black text-white"></footer>
+  </body>
+</html>

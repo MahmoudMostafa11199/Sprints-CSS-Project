@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>E-commarce | Contact</title>
+    <meta name="description" content="" />
+
+    <!----------------------- Page Icon ----------------------->
+
+    <!----------------------- Google Font ----------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!----------------------- CSS Files ----------------------->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary-50: #fbecec;
+        --color-primary-100: #f4c7c7;
+        --color-primary-200: #eda2a2;
+        --color-primary-300: #e98f8f;
+        --color-primary-400: #e67c7c;
+        --color-primary-500: #e26969;
+        --color-primary-600: #df5757;
+        --color-primary-700: #db4444;
+        --color-primary-800: #af3636;
+        --color-primary-900: #6e2222;
+
+        --color-secondary-50: #e6fff0;
+        --color-secondary-100: #ccffe0;
+        --color-secondary-200: #99ffc2;
+        --color-secondary-300: #66ffa3;
+        --color-secondary-400: #33ff85;
+        --color-secondary-500: #00cc52;
+        --color-secondary-600: #00993d;
+        --color-secondary-700: #00ff66;
+        --color-secondary-800: #006629;
+        --color-secondary-900: #003314;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!----------------------- JavaScript Files ----------------------->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="../assets/js/loading-layout.js" defer></script>
+  </head>
+
+  <!----------------------- BODY ----------------------->
+  <body>
+    <!----------------------- HEADER ----------------------->
+    <header class="header py-3 px-3 shadow-sm"></header>
+
+    <!----------------------- Main ----------------------->
+    <main class="main contact-page">
+      <!----------------------- Bread Crumb Nav ----------------------->
+      <nav aria-label="Breadcrumb" class="bread-crumb-section">
+        <div
+          class="container mb-12 space-x-3 text-sm py-5 text-center md:py-10 md:text-start"
+        >
+          <a
+            href="../index.html"
+            class="text-gray-400 transition-all hover:text-gray-600"
+            >Home</a
+          >
+          <span>/</span>
+          <span>Contact</span>
+        </div>
+      </nav>
+
+      <!----------------------- Contact Section ----------------------->
+      <section class="contact-section py-20">
+        <div class="container">
+          <div class="grid grid-cols-12 gap-6">
+            <div
+              class="col-span-12 sm:col-span-5 md:col-span-4 shadow-md px-8 py-10 space-y-10"
+            >
+              <div>
+                <div class="flex items-center gap-4 mb-4">
+                  <iconify-icon
+                    icon="basil:phone-outline"
+                    width="28"
+                    height="28"
+                    class="bg-primary-700 rounded-full p-2 text-white"
+                  ></iconify-icon>
+                  <h4 class="text-lg font-semibold">Call To Us</h4>
+                </div>
+                <p class="mb-4 text-sm">
+                  We are available 24/7, 7 days a week.
+                </p>
+                <p class="text-sm">Phone: +8801611112222</p>
+              </div>
+
+              <hr class="h-[0.1rem] bg-gray-500 rounded-full" />
+
+              <div>
+                <div class="flex items-center gap-4 mb-4">
+                  <iconify-icon
+                    icon="bytesize:mail"
+                    width="28"
+                    height="28"
+                    class="bg-primary-700 rounded-full p-2 text-white"
+                  ></iconify-icon>
+                  <h4 class="text-lg font-semibold">Write To Us</h4>
+                </div>
+                <p class="mb-4 text-sm">
+                  Fill out our form and we will contact you within 24 hours.
+                </p>
+                <p class="mb-4 text-sm">Emails: customer@exclusive.com</p>
+                <p class="text-sm">Emails: Support@exclusive.com</p>
+              </div>
+            </div>
+
+            <form
+              class="col-span-12 sm:col-span-7 md:col-span-8 shadow-md px-6 py-10 flex flex-wrap justify-between gap-y-6 gap-x-2 items-start"
+            >
+              <div class="relative w-full md:w-[48%] lg:w-[32%]">
+                <input
+                  name="user-name"
+                  class="input"
+                  type="text"
+                  placeholder=""
+                  required
+                />
+                <label for="user-name" class="label"
+                  >Your Name <span class="text-primary-600">*</span></label
+                >
+              </div>
+              <div class="relative w-full md:w-[48%] lg:w-[32%]">
+                <input
+                  name="email"
+                  class="input"
+                  type="email"
+                  placeholder=""
+                  required
+                />
+                <label for="email" class="label">
+                  Your Email<span class="text-primary-600"> *</span>
+                </label>
+              </div>
+              <div class="relative w-full md:w-[49%] lg:w-[32%]">
+                <input
+                  name="phone-number"
+                  class="input"
+                  type="tel"
+                  placeholder=""
+                  required
+                />
+                <label for="phone-number" class="label">
+                  Your Phone<span class="text-primary-600"> *</span>
+                </label>
+              </div>
+              <div class="relative w-full">
+                <textarea
+                  name="message"
+                  id="message"
+                  class="input"
+                  rows="8"
+                  placeholder=""
+                ></textarea>
+                <label for="message" class="label"> Your Message </label>
+              </div>
+              <div class="text-right w-full">
+                <a href="#" class="btn btn-primary"> Send Message </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!----------------------- FOOTER ----------------------->
+    <footer class="footer bg-black text-white"></footer>
+  </body>
+</html>

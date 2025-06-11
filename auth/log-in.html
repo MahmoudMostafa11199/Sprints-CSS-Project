@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>E-commarce | Log-In</title>
+    <meta name="description" content="" />
+
+    <!----------------------- Page Icon ----------------------->
+
+    <!----------------------- Google Font ----------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!----------------------- CSS Files ----------------------->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary-50: #fbecec;
+        --color-primary-100: #f4c7c7;
+        --color-primary-200: #eda2a2;
+        --color-primary-300: #e98f8f;
+        --color-primary-400: #e67c7c;
+        --color-primary-500: #e26969;
+        --color-primary-600: #df5757;
+        --color-primary-700: #db4444;
+        --color-primary-800: #af3636;
+        --color-primary-900: #6e2222;
+
+        --color-secondary-50: #e6fff0;
+        --color-secondary-100: #ccffe0;
+        --color-secondary-200: #99ffc2;
+        --color-secondary-300: #66ffa3;
+        --color-secondary-400: #33ff85;
+        --color-secondary-500: #00cc52;
+        --color-secondary-600: #00993d;
+        --color-secondary-700: #00ff66;
+        --color-secondary-800: #006629;
+        --color-secondary-900: #003314;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!----------------------- JavaScript Files ----------------------->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="../assets/js/loading-layout.js" defer></script>
+  </head>
+
+  <!----------------------- BODY ----------------------->
+  <body>
+    <!----------------------- HEADER ----------------------->
+    <header class="header py-3 px-3 shadow-sm"></header>
+
+    <!----------------------- Main ----------------------->
+    <main class="main log-in-page">
+      <!----------------------- Sign-Up Section ----------------------->
+      <section class="log-in-section pt-20 pb-36 h-[55rem]">
+        <div class="relative h-full">
+          <div
+            class="hidden absolute w-1/2 h-full top-0 left-0 bg-[#CBE4E8] pt-6 md:block"
+          >
+            <image
+              src="../assets/imgs/beatsnoop.png"
+              alt="beatsnoop"
+              class="w-full h-full object-contain"
+              width="400"
+              height="650"
+            />
+          </div>
+
+          <div class="container h-full flex justify-between items-center">
+            <div class="md:w-1/2"></div>
+
+            <div class="w-full py-20 px-6 sm:px-20 md:w-1/2">
+              <h3 class="text-2xl font-semibold mb-4 tracking-wide md:text-3xl">
+                Log in to Exclusive
+              </h3>
+              <p class="mb-10">Enter your details below</p>
+              <form class="flex flex-col gap-8">
+                <input
+                  class="w-full py-2 border-b-2 border-gray-300 focus:outline-none"
+                  type="text"
+                  placeholder="Email or Phone Number"
+                  required
+                />
+                <input
+                  class="w-full py-2 border-b-2 border-gray-300 focus:outline-none"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
+                <div class="flex justify-between items-center">
+                  <a href="../index.html" class="btn btn-primary">Log in</a>
+                  <a href="#" class="text-red-500">Forget Password?</a>
+                </div>
+
+                <p class="text-center space-x-4">
+                  <span class="text-sm text-gray-600"
+                    >Don't have an account?</span
+                  >
+                  <a
+                    href="./sign-up.html"
+                    class="border-b-2 border-gray-400 pb-1"
+                  >
+                    Sign Up
+                  </a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!----------------------- FOOTER ----------------------->
+    <footer class="footer bg-black text-white"></footer>
+  </body>
+</html>

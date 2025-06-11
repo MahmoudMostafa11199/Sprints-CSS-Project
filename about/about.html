@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>E-commarce | About</title>
+    <meta name="description" content="" />
+
+    <!----------------------- Page Icon ----------------------->
+
+    <!----------------------- Google Font ----------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!----------------------- CSS Files ----------------------->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary-50: #fbecec;
+        --color-primary-100: #f4c7c7;
+        --color-primary-200: #eda2a2;
+        --color-primary-300: #e98f8f;
+        --color-primary-400: #e67c7c;
+        --color-primary-500: #e26969;
+        --color-primary-600: #df5757;
+        --color-primary-700: #db4444;
+        --color-primary-800: #af3636;
+        --color-primary-900: #6e2222;
+
+        --color-secondary-50: #e6fff0;
+        --color-secondary-100: #ccffe0;
+        --color-secondary-200: #99ffc2;
+        --color-secondary-300: #66ffa3;
+        --color-secondary-400: #33ff85;
+        --color-secondary-500: #00cc52;
+        --color-secondary-600: #00993d;
+        --color-secondary-700: #00ff66;
+        --color-secondary-800: #006629;
+        --color-secondary-900: #003314;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!----------------------- JavaScript Files ----------------------->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="../assets/js/loading-layout.js" defer></script>
+    <script type="module" src="./about.js"></script>
+  </head>
+
+  <!----------------------- Body ----------------------->
+  <body>
+    <!----------------------- HEADER ----------------------->
+    <header class="header p-3 shadow-sm"></header>
+
+    <!----------------------- MAIN  ----------------------->
+    <main class="main about-page">
+      <!----------------------- Bread Crumb Nav ----------------------->
+      <nav aria-label="Breadcrumb" class="bread-crumb-section">
+        <div
+          class="container mb-12 space-x-3 text-sm py-5 text-center md:py-10 md:text-start"
+        >
+          <a
+            href="../index.html"
+            class="text-gray-400 transition-all hover:text-gray-600"
+            >Home</a
+          >
+          <span>/</span>
+          <span>About</span>
+        </div>
+      </nav>
+
+      <!----------------------- Our Store Section ----------------------->
+      <section class="our-store-section pb-20 relative md:mb-16">
+        <div class="container h-full flex justify-between items-center">
+          <div class="md:w-1/2 py-20 pe-6">
+            <h2 class="text-5xl mb-8 font-semibold tracking-wider">
+              Our Store
+            </h2>
+            <p class="mb-6 font-medium">
+              Launced in 2015, Exclusive is South Asia&apos;s premier online
+              shopping makterplace with an active presense in Bangladesh.
+              Supported by wide range of tailored marketing, data and service
+              solutions, Exclusive has 10,500 sallers and 300 brands and serves
+              3 millioons customers across the region.
+            </p>
+            <p class="font-medium">
+              Exclusive has more than 1 Million products to offer, growing at a
+              very fast. Exclusive offers a diverse assotment in categories
+              ranging from consumer.
+            </p>
+          </div>
+          <div class=""></div>
+        </div>
+
+        <div>
+          <div
+            class="hidden absolute w-1/2 h-full top-0 right-0 bg-[#eb81ab] md:block"
+          >
+            <img
+              src="../assets/imgs/two-african-females-holding-shopping-bags-removebg.png"
+              alt="Portrait two african females holding shopping bags"
+              class="w-full h-full object-contain object-bottom"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!----------------------- Stats Section ----------------------->
+      <section class="stats-section">
+        <div class="container py-14">
+          <div class="flex justify-between gap-8 flex-wrap">
+            <div
+              class="flex-[50%] sm:flex-[30%] md:flex-[20%] text-center border-2 border-gray-300 px-6 py-10 transition-all hover:bg-primary-600 hover:text-white hover:border-primary-600 hover:shadow-lg"
+            >
+              <iconify-icon
+                icon="iconoir:shop-four-tiles"
+                width="24"
+                height="24"
+                class="p-2 mb-2 rounded-full bg-black text-white"
+              ></iconify-icon>
+              <h4 class="text-2xl font-semibold mb-1">10.5k</h4>
+              <p class="text-xs">Sallers active our site</p>
+            </div>
+            <div
+              class="flex-[50%] sm:flex-[30%] md:flex-[20%] text-center border-2 border-gray-300 px-6 py-10 transition-all hover:bg-primary-600 hover:text-white hover:border-primary-600 hover:shadow-lg"
+            >
+              <iconify-icon
+                icon="mage:dollar"
+                width="24"
+                height="24"
+                class="p-2 mb-2 rounded-full bg-black text-white"
+              ></iconify-icon>
+              <h4 class="text-2xl font-semibold mb-1">33k</h4>
+              <p class="text-xs">Mopnthly Produduct Sale</p>
+            </div>
+            <div
+              class="flex-[50%] sm:flex-[30%] md:flex-[20%] text-center border-2 border-gray-300 px-6 py-10 transition-all hover:bg-primary-600 hover:text-white hover:border-primary-600 hover:shadow-lg"
+            >
+              <iconify-icon
+                icon="fluent:shopping-bag-28-regular"
+                width="24"
+                height="24"
+                class="p-2 mb-2 rounded-full bg-black text-white"
+              ></iconify-icon>
+              <h4 class="text-2xl font-semibold mb-1">45.5k</h4>
+              <p class="text-xs">Customer active in our site</p>
+            </div>
+            <div
+              class="flex-[50%] sm:flex-[30%] md:flex-[20%] text-center border-2 border-gray-300 px-6 py-10 transition-all hover:bg-primary-600 hover:text-white hover:border-primary-600 hover:shadow-lg"
+            >
+              <iconify-icon
+                icon="healthicons:money-bag-outline"
+                width="24"
+                height="24"
+                class="p-2 mb-2 rounded-full bg-black text-white"
+              ></iconify-icon>
+              <h4 class="text-2xl font-semibold mb-1">25k</h4>
+              <p class="text-xs">Anual gross sale in our site</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------- Employees Section ----------------------->
+      <section class="employees-section">
+        <div class="container py-16">
+          <div
+            class="employees flex justify-between flex-wrap sm:flex-nowrap gap-6 mb-8 overflow-hidden"
+          ></div>
+        </div>
+      </section>
+
+      <!----------------------- Features Section ----------------------->
+      <section class="features-section">
+        <div class="container py-20">
+          <div class="flex justify-evenly gap-14 flex-wrap">
+            <div class="text-center shadow-sm p-6">
+              <iconify-icon
+                icon="hugeicons:delivery-truck-02"
+                width="24"
+                height="24"
+                class="inline-block mb-4 p-3 bg-black text-white border-8 rounded-full border-gray-300"
+              >
+              </iconify-icon>
+              <h4 class="font-semibold uppercase font-[Poppins] mb-1">
+                Free and Fast delivery
+              </h4>
+              <p class="text-xs">Free delivery for all orders over $140</p>
+            </div>
+            <div class="text-center shadow-sm p-6">
+              <iconify-icon
+                icon="lsicon:service-outline"
+                width="24"
+                height="24"
+                class="inline-block mb-4 bg-black p-3 text-white border-8 rounded-full border-gray-300"
+              ></iconify-icon>
+              <h4 class="font-semibold uppercase font-[Poppins] mb-1">
+                24/7 Customer service
+              </h4>
+              <p class="text-xs">Friendly 24/7 customer support</p>
+            </div>
+            <div class="text-center shadow-sm p-6">
+              <iconify-icon
+                icon="f7:checkmark-shield"
+                width="24"
+                height="24"
+                class="inline-block mb-4 bg-black p-3 text-white border-8 rounded-full border-gray-300"
+              ></iconify-icon>
+              <h4 class="font-semibold uppercase font-[Poppins] mb-1">
+                Money back Guarantee
+              </h4>
+              <p class="text-xs">We reurn money within 30 days</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!----------------------- FOOTER ----------------------->
+    <footer class="footer bg-black text-white"></footer>
+  </body>
+</html>

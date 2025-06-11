@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>E-commarce | My Account</title>
+    <meta name="description" content="" />
+
+    <!----------------------- Page Icon ----------------------->
+
+    <!----------------------- Google Font ----------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!----------------------- CSS Files ----------------------->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary-50: #fbecec;
+        --color-primary-100: #f4c7c7;
+        --color-primary-200: #eda2a2;
+        --color-primary-300: #e98f8f;
+        --color-primary-400: #e67c7c;
+        --color-primary-500: #e26969;
+        --color-primary-600: #df5757;
+        --color-primary-700: #db4444;
+        --color-primary-800: #af3636;
+        --color-primary-900: #6e2222;
+
+        --color-secondary-50: #e6fff0;
+        --color-secondary-100: #ccffe0;
+        --color-secondary-200: #99ffc2;
+        --color-secondary-300: #66ffa3;
+        --color-secondary-400: #33ff85;
+        --color-secondary-500: #00cc52;
+        --color-secondary-600: #00993d;
+        --color-secondary-700: #00ff66;
+        --color-secondary-800: #006629;
+        --color-secondary-900: #003314;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!----------------------- JavaScript Files ----------------------->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="../assets/js/loading-layout.js" defer></script>
+    <script src="./account.js" defer></script>
+  </head>
+
+  <!----------------------- BODY ----------------------->
+  <body>
+    <!----------------------- HEADER ----------------------->
+    <header class="header py-3 px-3 shadow-sm"></header>
+
+    <!----------------------- Main ----------------------->
+    <main class="main account-page">
+      <!----------------------- Bread Crumb Nav ----------------------->
+      <nav aria-label="Breadcrumb" class="bread-crumb-section">
+        <div
+          class="container mb-12 space-x-3 text-sm py-5 text-center md:py-10 md:text-start"
+        >
+          <a
+            href="../index.html"
+            class="text-gray-400 transition-all hover:text-gray-600"
+          >
+            Home
+          </a>
+          <span>/</span>
+          <span>My Account</span>
+        </div>
+      </nav>
+
+      <!----------------------- Account Section ----------------------->
+      <div class="container pb-28">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-12">
+          <aside
+            aria-label="Account Navigation"
+            class="account-navigation md:col-span-4 shadow-lg px-4 py-8 md:px-6 lg:px-10"
+          ></aside>
+
+          <section
+            class="profile-section md:col-span-8 shadow-lg px-4 py-8 md:px-6 lg:px-10"
+          >
+            <form class="edit-profile w-full" action="">
+              <h3 class="font-semibold text-xl text-primary-600 mb-4">
+                Edit Your Profile
+              </h3>
+              <div class="flex flex-wrap justify-between gap-y-7">
+                <div class="w-[45%] flex-shrink-0 space-y-2">
+                  <label
+                    class="text-sm inline-block font-medium"
+                    for="firstname"
+                  >
+                    First Name
+                  </label>
+                  <input
+                    class="input"
+                    type="text"
+                    name="firstname"
+                    id="firstname"
+                    placeholder="Mahmoud"
+                  />
+                </div>
+                <div class="w-[45%] flex-shrink-0 space-y-2">
+                  <label
+                    class="text-sm inline-block font-medium"
+                    for="lastname"
+                  >
+                    Last Name
+                  </label>
+                  <input
+                    class="input"
+                    type="text"
+                    name="lastname"
+                    id="lastname"
+                    placeholder="Elshahat"
+                  />
+                </div>
+                <div class="w-[45%] flex-shrink-0 space-y-2">
+                  <label class="text-sm inline-block font-medium" for="email">
+                    Email
+                  </label>
+                  <input
+                    class="input"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="mahmoud@gmail.com"
+                  />
+                </div>
+                <div class="w-[45%] flex-shrink-0 space-y-2">
+                  <label class="text-sm inline-block font-medium" for="address">
+                    Address
+                  </label>
+                  <input
+                    class="input"
+                    type="text"
+                    name="address"
+                    id="address"
+                    placeholder="Kingston, 5236, United State"
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label
+                    class="text-sm inline-block font-medium"
+                    for="password"
+                  >
+                    Password Changes
+                  </label>
+                  <input
+                    class="input"
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Current Password"
+                  />
+                  <input
+                    class="input"
+                    type="password"
+                    placeholder="New Password"
+                  />
+                  <input
+                    class="input"
+                    type="password"
+                    placeholder="Confirm New Password"
+                  />
+                </div>
+                <div class="w-full text-right space-x-2 md:space-x-8">
+                  <button type="reset" class="btn btn-tertiary btn-res">
+                    Cancel
+                  </button>
+                  <button type="submit" class="btn btn-primary btn-res">
+                    Save Changes
+                  </button>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!----------------------- FOOTER ----------------------->
+    <footer class="footer bg-black text-white"></footer>
+  </body>
+</html>
