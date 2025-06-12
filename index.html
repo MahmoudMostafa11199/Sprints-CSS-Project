@@ -49,6 +49,12 @@
         --color-secondary-800: #006629;
         --color-secondary-900: #003314;
       }
+      @layer components {
+        .subHeading {
+          @apply text-primary-700 font-semibold relative mb-8 pl-7 before:content-[''] before:absolute 
+                before:-translate-y-2/4 before:w-3.5 before:h-8 before:bg-primary-700 before:rounded before:left-0 before:top-2/4;
+        }
+      }
     </style>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>

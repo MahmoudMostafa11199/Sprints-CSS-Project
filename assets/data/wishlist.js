@@ -1,0 +1,73 @@
+export const favoriteProducts = [
+  {
+    id: '1',
+    img: 'sellingProducts/Gucci-duffle-bag.png',
+    title: 'Gucci duffle bag',
+    price: 1160,
+    sale: 35,
+  },
+  {
+    id: '2',
+    img: 'sellingProducts/RGB-liquid-CPU-Cooler.png',
+    title: 'RGB liquid CPU Cooler',
+    price: 1960,
+    sale: 0,
+  },
+  {
+    id: '3',
+    img: 'products/GP11-Shooter-USB-Gamepad.png',
+    title: 'GP11 Shooter USB Gamepad',
+    price: 550,
+    sale: 0,
+  },
+  {
+    id: '4',
+    img: 'products/Quilted-Satin-Jacket.png',
+    title: 'Quilted Satin Jacket',
+    price: 750,
+    sale: 0,
+  },
+];
+
+export const productForYou = [
+  {
+    id: '1',
+    img: '/products/ASUS-FHD-Gaming-Laptop.png',
+    title: 'ASUS FHD Gaming Laptop',
+    price: 1160,
+    sale: 35,
+    isNew: false,
+    ratingCount: 65,
+    ratings: { 1: 0, 2: 0, 3: 1, 4: 1, 5: 64 },
+  },
+  {
+    id: '2',
+    img: 'flashSales/IPS-LCD-Gaming-Monitor.png',
+    title: 'IPS LCD Gaming Monitor',
+    price: 1600,
+    sale: 0,
+    isNew: false,
+    ratingCount: 65,
+    ratings: { 1: 0, 2: 0, 3: 1, 4: 1, 5: 64 },
+  },
+  {
+    id: '3',
+    img: 'flashSales/HAVIT-HV-G92-Gamepad.png',
+    title: 'HAVIT HV-G92 Gamepad',
+    price: 560,
+    sale: 0,
+    isNew: true,
+    ratingCount: 65,
+    ratings: { 1: 0, 2: 0, 3: 1, 4: 1, 5: 64 },
+  },
+  {
+    id: '4',
+    img: 'flashSales/AK-900-wired-Keyboard.png',
+    title: 'AK-900 Wired Keyboard',
+    price: 200,
+    sale: 0,
+    isNew: false,
+    ratingCount: 65,
+    ratings: { 1: 0, 2: 0, 3: 1, 4: 1, 5: 64 },
+  },
+];

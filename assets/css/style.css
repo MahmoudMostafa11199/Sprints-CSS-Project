@@ -153,26 +153,6 @@ button {
   outline-offset: 2px;
 }
 
-.subHeading {
-  padding-left: 1.75rem;
-  margin-bottom: 2rem;
-  color: var(--color-primary-700);
-  font-weight: 600;
-  position: relative;
-}
-
-.subHeading::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 0.875rem;
-  height: 2rem;
-  background-color: var(--color-primary-700);
-  border-radius: 0.25rem;
-}
-
 .shadow-small {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }

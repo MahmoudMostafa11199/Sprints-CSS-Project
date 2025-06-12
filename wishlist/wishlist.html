@@ -43,6 +43,12 @@
         --color-secondary-800: #006629;
         --color-secondary-900: #003314;
       }
+      @layer components {
+        .subHeading {
+          @apply text-primary-700 font-semibold relative pl-7 before:content-[''] before:absolute 
+                before:-translate-y-2/4 before:w-3.5 before:h-8 before:bg-primary-700 before:rounded before:left-0 before:top-2/4;
+        }
+      }
     </style>
     <link rel="stylesheet" href="../assets/css/style.css" />
 
@@ -65,9 +71,11 @@
         <div class="container">
           <div class="flex justify-between items-center mb-14">
             <h2 class="text-xl">Wishlist (4)</h2>
-            <a class="btn btn-tertiary" href="#">Move All To Bag</a>
+            <a class="btn btn-tertiary btn-res" href="#">Move All To Bag</a>
           </div>
-          <div class="wishlist flex gap-7 overflow-hidden"></div>
+          <div
+            class="wishlist carousel-container flex gap-7 overflow-hidden"
+          ></div>
         </div>
       </section>
 
@@ -75,10 +83,12 @@
       <section class="product-for-you-section py-20">
         <div class="container">
           <div class="flex justify-between items-center mb-14">
-            <h2 class="subHeading mb-0 text-black text-xl">Just For You</h2>
-            <a class="btn btn-tertiary" href="#">See All</a>
+            <h2 class="subHeading text-black text-xl">Just For You</h2>
+            <a class="btn btn-tertiary btn-res" href="#">See All</a>
           </div>
-          <div class="product-for-you flex gap-7 overflow-hidden"></div>
+          <div
+            class="product-for-you carousel-container flex gap-7 overflow-hidden"
+          ></div>
         </div>
       </section>
     </main>
